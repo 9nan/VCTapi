@@ -2,6 +2,9 @@
 
 An Unofficial REST API for [vlr.gg](https://www.vlr.gg/), providing real-time access to Valorant Esports match data and news coverage. Modified and maintained by [9nan](https://github.com/9nan).
 
+
+http://45.137.70.90:2592/
+
 ## Features
 
 - **Live Match Tracking**: Real-time updates for ongoing Valorant matches
