@@ -23,8 +23,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 app = FastAPI(
-    title="VLR.GG API by Nan (Modified by 9nan)",
-    description="An Unofficial REST API for [vlr.gg](https://www.vlr.gg/), a site for Valorant Esports match and news coverage. Originally made by [Nan](https://github.com/axsddlr), modified and enhanced by [9nan](https://github.com/9nan)",
+    title="VLR.GG API by 9nan",
+    description="An Unofficial API for [vlr.gg](https://www.vlr.gg/), a site for Valorant Esports match and news coverage. Modified and maintained by [9nan](https://github.com/9nan)",
     docs_url="/",
     redoc_url=None,
     swagger_ui_parameters={
