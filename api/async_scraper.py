@@ -29,7 +29,7 @@ class AsyncVlrScraper:
             if not live_matches:
                 # Return a single match object with "no game is live" message
                 no_game_match = {
-                    "team1": "no game is live",
+                    "team1": "",
                     "team2": "",
                     "flag1": "",
                     "flag2": "",
@@ -47,7 +47,8 @@ class AsyncVlrScraper:
                     "team1_logo": "",
                     "team2_logo": "",
                     "map_number": "",
-                    "current_map": ""
+                    "current_map": "",
+                    "klurgecustom": "no game is live"
                 }
                 return {"status": "success", "data": [no_game_match]}
             
@@ -57,6 +58,11 @@ class AsyncVlrScraper:
             
             # Filter out exceptions and empty results
             valid_results = [r for r in results if isinstance(r, dict) and r]
+
+            # Add custom tags dynamically for all matches
+            for idx, match in enumerate(valid_results):
+                key_name = f"klurgecustom{idx + 1}" if idx > 0 else "klurgecustom"
+                match[key_name] = f"{match['team1']} {match['score1']} : {match['team2']} {match['score2']}"
             
             return {"status": "success", "data": valid_results}
             
