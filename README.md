@@ -1,6 +1,6 @@
 # VLR.GG API
 
-An Unofficial REST API for [vlr.gg](https://www.vlr.gg/), providing real-time access to Valorant Esports match data and news coverage. Modified and maintained by [9nan](https://github.com/9nan).
+An Unofficial REST API for [vlr.gg](https://www.vlr.gg/), providing real-time access to Valorant Esports match data and news coverage. Modified and maintained by [itznan](https://github.com/itznan).
 
 
 http://45.137.70.90:2592/
@@ -99,4 +99,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - [vlr.gg](https://www.vlr.gg/) for providing Valorant esports coverage
-- Maintained by: [9nan](https://github.com/9nan)
+- Maintained by: [itznan](https://github.com/itznan)
